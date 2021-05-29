@@ -2,11 +2,11 @@ package utils;
 
 import java.util.Scanner;
 
-import classes.Arma;
+import classes.ArmaProxy;
 
 public class ArmaUtil {
 
-  public static Arma criarNovaArma(Scanner scanner) {
+  public static ArmaProxy criarNovaArma(Scanner scanner) {
     scanner.nextLine();
 
     System.out.println("Qual o tipo da arma? ");
@@ -24,7 +24,7 @@ public class ArmaUtil {
     System.out.println("Qual a quantidade de munição da arma? ");
     Integer municao = scanner.nextInt();
 
-    Arma novaArma = new Arma(tipo, nome, cor, tamanhoPente, municao);
+    ArmaProxy novaArma = new ArmaProxy(tipo, nome, cor, tamanhoPente, municao);
 
     return novaArma;
   }

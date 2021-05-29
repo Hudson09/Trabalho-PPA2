@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import classes.Arma;
+import classes.ArmaProxy;
 import utils.ArmaUtil;
 
 public class App {
@@ -8,7 +8,7 @@ public class App {
         Scanner scanner = new Scanner(new java.io.InputStreamReader(System.in));
 
         int opcaoSelecionada;
-        Arma arma;
+        ArmaProxy arma;
 
         System.out.println("");
 

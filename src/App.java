@@ -8,6 +8,7 @@ public class App {
         Scanner scanner = new Scanner(new java.io.InputStreamReader(System.in));
 
         int opcaoSelecionada;
+        Arma arma;
 
         System.out.println("");
 
@@ -15,6 +16,7 @@ public class App {
             System.out.println("------------- ESCOLHA A OPÇÃO DESEJADA -------------");
             System.out.println("1 - VER ARQUIVOS CADASTRADOS");
             System.out.println("2 - CADASTRAR NOVA ARMA");
+            System.out.println("3 - EXCLUÍR ARMA");
             System.out.println("0 - ENCERRAR");
             System.out.println("");
 
@@ -26,8 +28,15 @@ public class App {
                 case 1:
                     break;
                 case 2:
-                    Arma arma = ArmaUtil.criarNovaArma(scanner);
+                    arma = ArmaUtil.criarNovaArma(scanner);
                     arma.printArma();
+                    break;
+                case 3:
+                    arma = null;
+                    System.out.println("");
+                    System.out.println("Arma excluída!");
+                    System.out.println("");
+                    break;
             }
         } while (opcaoSelecionada > 0);
     }

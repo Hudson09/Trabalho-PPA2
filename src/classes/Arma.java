@@ -35,7 +35,7 @@ public class Arma {
   }
 
   @Override
-  public void finalize() throws Throwable {
+  protected void finalize() throws Throwable {
     System.out.println(this.nome + " destruida!");
   }
 

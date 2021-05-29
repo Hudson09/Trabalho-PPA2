@@ -28,7 +28,6 @@ public class App {
                 case 2:
                     Arma arma = ArmaUtil.criarNovaArma(scanner);
                     arma.printArma();
-                    break;
             }
         } while (opcaoSelecionada > 0);
     }

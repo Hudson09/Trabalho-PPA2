@@ -15,9 +15,14 @@ public class Arma {
     this.municao = municao;
   }
 
+  @Override
+  public void finalize() throws Throwable {
+    System.out.println(this.nome + " destruida!");
+  }
+
   public void printArma() {
     System.out.println("");
-    System.out.println("Arma " + this.nome + " criada!");
+    System.out.println(this.nome + " criada!");
     System.out.println("");
   }
 
